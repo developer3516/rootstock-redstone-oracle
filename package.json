@@ -1,0 +1,17 @@
+{
+  "name": "rootstock-redstone-oracle",
+  "version": "0.1.0",
+  "description": "Node.js scripts and contracts for reading RedStone BTC prices on Ethereum and Rootstock networks.",
+  "license": "MIT",
+  "scripts": {
+    "fetch:mainnet": "node fetch_price.js",
+    "fetch:rootstock": "node fetch_btc_rootstock.js",
+    "fetch:rootstock:testnet": "node fetch_btc_rootstock_testnet.js",
+    "deploy:testnet": "node deploy_rootstock_price_reader.js",
+    "read:testnet": "node read_price_from_consumer.js"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0",
+    "solc": "^0.8.21"
+  }
+}
